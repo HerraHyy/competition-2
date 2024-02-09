@@ -2,8 +2,9 @@ import './App.css';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
-import maxence from './img/maxence.png';
-import maxenceGlasses from './img/maxence-glasses.png';
+import Dice from './components/Dice';
+import { maxence, maxenceGlasses } from './img/index.js';
+
 
 function App() {
   return (
@@ -45,6 +46,21 @@ function App() {
         }}>Clickable Picture</h2>
         <ClickablePicture img={maxence} imgClicked={maxenceGlasses} />
           </div>
+          <div className="App">
+      <h2 style={{
+        display: 'flex',
+        justifyContent: 'center',
+        fontSize:'20px',        
+        marginTop:'50px'
+      }}>Dice</h2>
+      <div style={{
+        display: 'flex',
+        backgroundColor: 'lightgrey',
+        borderRadius: '30px',
+      }}>
+      <Dice />
+      </div>
+        </div>
       </header>
     </div>
   );

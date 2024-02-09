@@ -1,0 +1,9 @@
+export const dice1 = require('./dice1.png');
+export const dice2 = require('./dice2.png');
+export const dice3 = require('./dice3.png');
+export const dice4 = require('./dice4.png');
+export const dice5 = require('./dice5.png');
+export const dice6 = require('./dice6.png');
+export const diceEmpty = require('./dice-empty.png');
+export const maxence = require('./maxence.png');
+export const maxenceGlasses = require('./maxence-glasses.png');
