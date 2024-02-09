@@ -6,6 +6,7 @@ import Dice from './components/Dice';
 import { maxence, maxenceGlasses } from './img/index.js';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable.js';
+import FaceBook from './components/FaceBook.js';
 
 function App() {
   return (
@@ -87,6 +88,10 @@ function App() {
       <NumbersTable limit={12} />
       </div>
       <br></br>
+      <div>
+      <h1>Berlin Data</h1>
+      <FaceBook />
+    </div>
     </div>
       </header>
     </div>
