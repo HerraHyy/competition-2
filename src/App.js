@@ -1,6 +1,9 @@
 import './App.css';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import maxence from './img/maxence.png';
+import maxenceGlasses from './img/maxence-glasses.png';
 
 function App() {
   return (
@@ -28,12 +31,20 @@ function App() {
         </div>
         <div className="App">
       <h2 style={{ 
-        border:'1px solid black',
+        
         fontSize:'20px', 
         marginBottom:'0'
         }}>Like Button</h2>
       <LikeButton />
         </div>
+        <div className="App">
+      <h2 style={{ 
+         
+        fontSize:'20px', 
+        marginBottom:'0'
+        }}>Clickable Picture</h2>
+        <ClickablePicture img={maxence} imgClicked={maxenceGlasses} />
+          </div>
       </header>
     </div>
   );
