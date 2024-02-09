@@ -1,5 +1,6 @@
 import './App.css';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
 
 function App() {
   return (
@@ -24,6 +25,14 @@ function App() {
               licensePlate: "BE33ER"
             }}
           />
+        </div>
+        <div className="App">
+      <h2 style={{ 
+        border:'1px solid black',
+        fontSize:'20px', 
+        marginBottom:'0'
+        }}>Like Button</h2>
+      <LikeButton />
         </div>
       </header>
     </div>

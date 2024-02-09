@@ -5,7 +5,8 @@ const DriverCard = ({ name, rating, img, car }) => {
   return (
     <div style={{ 
       backgroundColor: '#5361e1',
-      borderRadius: '10px',      
+      borderRadius: '10px',
+      /* border: '2px solid black', */    
       display: 'flex',      
       justifyContent: 'center',
       alignItems: 'center',      
@@ -13,6 +14,7 @@ const DriverCard = ({ name, rating, img, car }) => {
       width: '1000px',
       height: '180px'      
     }}>
+        
     <div style={{ 
         display:'flex', 
         width:'100%', 
@@ -26,10 +28,15 @@ const DriverCard = ({ name, rating, img, car }) => {
         marginRight: '15px'
         }} />
     </div>   
-      <div style={{        
+      <div style={{    
+        display:'flex',
+        flexDirection:'column',
+        /* border: '2px solid red', */    
         width: '100%',
-        textAlign: 'left',
-        lineHeight: '1' 
+        height: '100%',
+        justifyContent: 'center',
+        alignItems: 'flex-start',
+        lineHeight: '1',
         }}>
         <h2 style={{ 
             color: 'white', 
@@ -46,8 +53,9 @@ const DriverCard = ({ name, rating, img, car }) => {
             fontSize:'24px' 
             }}>{car.model} - {car.licensePlate}
         </p>
-      </div>
+       </div>
     </div>
+    
   );
 };
 
