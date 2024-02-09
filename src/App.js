@@ -4,6 +4,7 @@ import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import { maxence, maxenceGlasses } from './img/index.js';
+import Carousel from './components/Carousel';
 
 
 function App() {
@@ -57,10 +58,21 @@ function App() {
         display: 'flex',
         backgroundColor: 'lightgrey',
         borderRadius: '30px',
+        width: '200px',
+        height: '200px',
       }}>
       <Dice />
       </div>
+      <br></br>
+      <div>
+        <Carousel images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+          ]} />
         </div>
+      </div>
       </header>
     </div>
   );
