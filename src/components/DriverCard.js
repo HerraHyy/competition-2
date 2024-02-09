@@ -1,5 +1,5 @@
 import React from 'react';
-import Rating from './Rating'; // Assuming Rating component is in the same directory
+import Rating from './Rating';
 
 const DriverCard = ({ name, rating, img, car }) => {
   return (
