@@ -5,7 +5,7 @@ import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import { maxence, maxenceGlasses } from './img/index.js';
 import Carousel from './components/Carousel';
-
+import NumbersTable from './components/NumbersTable.js';
 
 function App() {
   return (
@@ -47,7 +47,7 @@ function App() {
         }}>Clickable Picture</h2>
         <ClickablePicture img={maxence} imgClicked={maxenceGlasses} />
           </div>
-          <div className="App">
+    <div className="App">
       <h2 style={{
         display: 'flex',
         justifyContent: 'center',
@@ -71,8 +71,23 @@ function App() {
           'https://randomuser.me/api/portraits/women/2.jpg',
           'https://randomuser.me/api/portraits/men/2.jpg'
           ]} />
-        </div>
       </div>
+    </div>
+    <br></br>
+    <div className="App">
+      <h2 style={{
+        display: 'flex',
+        justifyContent: 'center',
+        fontSize:'20px',        
+        marginTop:'50px'
+      }}>Numbers Table</h2>
+      <div style={{
+        display: 'flex',
+      }}>
+      <NumbersTable limit={12} />
+      </div>
+      <br></br>
+    </div>
       </header>
     </div>
   );
